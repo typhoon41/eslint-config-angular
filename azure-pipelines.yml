@@ -1,0 +1,29 @@
+trigger:
+- main
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- task: Npm@1
+  displayName: 'Install npm packages'
+  inputs:
+    command: 'install'
+
+- task: Npm@1
+  displayName: 'Package package'
+  inputs:
+    command: 'custom'
+    customCommand: 'pack'
+
+- task: CopyFiles@2
+  displayName: 'Copy archives to artifacts staging directory'
+  inputs:
+    contents: '*.tgz'
+    targetFolder: $(Build.ArtifactStagingDirectory)
+
+- task: PublishBuildArtifacts@1
+  displayName: 'Publish artifacts'
+  inputs:
+    path: $(Build.ArtifactStagingDirectory)
+    artifact: package
