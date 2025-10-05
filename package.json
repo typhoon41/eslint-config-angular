@@ -1,6 +1,6 @@
 {
   "name": "@typhoon41/eslint-config-angular",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "author": "Nikola Dragićević",
   "description": "Nikola Dragićević's shareable config for Angular v19+ projects using eslint.",
@@ -9,7 +9,8 @@
     "index.js"
   ],
   "dependencies": {
-    "@typhoon41/eslint-config": "1.1.3"
+    "@typhoon41/eslint-config": "1.1.4",
+    "angular-eslint": "20.3.0"
   },
   "main": "index.js",
   "repository": {

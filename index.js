@@ -1,7 +1,8 @@
+import { defineConfig } from "eslint/config";
 import defaultConfiguration from "@typhoon41/eslint-config";
 import angular from "angular-eslint";
 
-export default [
+export default defineConfig([
   ...defaultConfiguration,
   {
     "processor": angular.processInlineTemplates,
@@ -37,6 +38,7 @@ export default [
       "@angular-eslint/pipe-prefix": "off",
       "@angular-eslint/prefer-on-push-component-change-detection": "error",
       "@angular-eslint/prefer-output-readonly": "error",
+      "@angular-eslint/prefer-output-emitter-ref": "error",
       "@angular-eslint/prefer-signals": "error",
       "@angular-eslint/prefer-standalone": "error",
       "@angular-eslint/relative-url-prefix": "error",
@@ -108,7 +110,10 @@ export default [
       "@angular-eslint/template/no-inline-styles": "error",
       "@angular-eslint/template/no-interpolation-in-attributes": "error",
       "@angular-eslint/template/no-negated-async": "error",
+      "@angular-eslint/template/no-nested-tags": "error",
       "@angular-eslint/template/no-positive-tabindex": "error",
+      "@angular-eslint/template/prefer-at-empty": "error",
+      "@angular-eslint/template/prefer-contextual-for-variables": "error",
       "@angular-eslint/template/prefer-control-flow": "error",
       "@angular-eslint/template/prefer-ngsrc": "off",
       "@angular-eslint/template/prefer-self-closing-tags": "error",
@@ -119,4 +124,4 @@ export default [
       "@angular-eslint/template/valid-aria": "error",
     }
   }
-];
+]);
