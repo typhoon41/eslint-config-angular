@@ -93,7 +93,7 @@ export default defineConfig([
       ],
       "@angular-eslint/template/cyclomatic-complexity": ["error",
         {
-          maxComplexity: 3
+          maxComplexity: 5
         }
       ],
       "@angular-eslint/template/elements-content": "error",
