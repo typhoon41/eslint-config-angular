@@ -1,13 +1,13 @@
 # @typhoon41/eslint-config
 
-> Strict, shareable config for Angular v19+ projects usint ESLint [shareable config](http://eslint.org/docs/developer-guide/shareable-configs.html).
+> Strict, shareable config for Angular v20+ projects using ESLint [shareable config](http://eslint.org/docs/developer-guide/shareable-configs.html).
 
 To see the rules that this config uses, please read the [config itself](./index.js).
 
 ## Installation
 
-```
-$ npm install --save-dev @typhoon41/eslint-config-angular
+```npm
+npm install --save-dev @typhoon41/eslint-config-angular
 ```
 
 ## Usage
@@ -16,15 +16,17 @@ Once the `@typhoon41/eslint-config-angular` package is installed, you can use it
 
 ```js
 import defaultConfiguration from "@typhoon41/eslint-config-angular";
+import { defineConfig } from "eslint/config";
 
-export default [
+export default defineConfig([
     ...defaultConfiguration,
     {
+        "files": ["src/**/*.ts"],
         "rules": {
             // Additional, per-project rules...
         }
     }
-];
+]);
 ```
 
 ## License
