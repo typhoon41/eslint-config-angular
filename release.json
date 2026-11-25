@@ -1,0 +1,5 @@
+{
+  "units": [
+    { "name": "eslint-config-angular", "type": "npm", "package": "package.json" }
+  ]
+}
