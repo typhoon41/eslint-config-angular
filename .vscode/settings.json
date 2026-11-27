@@ -1,0 +1,41 @@
+{
+    "workbench.tree.indent": 25,
+    "eslint.enable": true,
+    "eslint.validate": [
+        "javascript",
+        "typescript",
+        "html"
+    ],
+    "editor.bracketPairColorization.enabled": true,
+    "editor.guides.bracketPairs": "active",
+    "editor.formatOnSave": false,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": "always"
+    },
+    "workbench.colorTheme": "Nord Light",
+    "workbench.colorCustomizations": {
+        "[Nord Light]": {
+            "editorBracketHighlight.foreground1": "#7e4402",
+            "editorBracketHighlight.foreground2": "#22990a",
+            "editorBracketHighlight.foreground3": "#1411c4",
+            "editorBracketHighlight.foreground4": "#a59e3b",
+            "editorBracketHighlight.foreground5": "#9c15c5",
+            "editorBracketHighlight.foreground6": "#0d47e7",
+            "editorBracketHighlight.unexpectedBracket.foreground": "#FF2C6D"
+        }
+    },
+    "workbench.iconTheme": "file-icons",
+    "workbench.editor.enablePreview": false,
+    "workbench.editor.wrapTabs": true,
+    "workbench.editor.tabSizing": "fit",
+    "git.openRepositoryInParentFolders": "never",
+    "cSpell.words": [
+        "eslint"
+    ],
+    "files.autoSaveDelay": 500,
+    "files.trimTrailingWhitespace": true,
+    "files.exclude": {
+        "**/.git": true,
+        "**/node_modules": true
+    }
+}
