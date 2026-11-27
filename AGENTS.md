@@ -4,7 +4,7 @@ This file provides guidance to agents when working with code in this repository.
 
 ## What this is
 
-`@typhoon41/eslint-config-angular`: a strict, shareable ESLint 9 flat config for Angular v22+ projects, published
+`@typhoon41/eslint-config-angular`: a strict, shareable ESLint 10 flat config for Angular v22+ projects, published
 publicly on npmjs.org. The whole package is `index.js`: one `defineConfig` block for `src/**/*.ts` that spreads
 `@typhoon41/eslint-config` (repository `Eslint`) and adds the `angular-eslint` plugin and its inline-template processor.
 Both are runtime `dependencies` pinned to exact versions, so consumers get them transitively and only import the
