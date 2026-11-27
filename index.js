@@ -63,7 +63,7 @@ export default defineConfig([
       "@angular-eslint/use-injectable-provided-in": "error",
       "@angular-eslint/use-lifecycle-interface": "error",
       "@angular-eslint/use-pipe-transform-interface": "error",
-      "new-cap": ["error", { capIsNewExceptions: ["Component", "Directive", "Injectable", "Pipe", "Service"] }]
+      "new-cap": ["error", { capIsNewExceptions: ["Component", "Directive", "HostBinding", "HostListener", "Inject", "Injectable", "Input", "NgModule", "Output", "Pipe", "Service", "Subjectize", "ViewChild", "ViewChildren"] }]
     }
   },
   {
