@@ -1,6 +1,6 @@
-# @typhoon41/eslint-config
+# @typhoon41/eslint-config-angular
 
-> Strict, shareable config for Angular v20+ projects using ESLint [shareable config](http://eslint.org/docs/developer-guide/shareable-configs.html).
+> Strict, shareable config for Angular v22+ projects using an ESLint 10 [shareable config](http://eslint.org/docs/developer-guide/shareable-configs.html).
 
 To see the rules that this config uses, please read the [config itself](./index.js).
 
